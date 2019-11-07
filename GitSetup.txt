@@ -1,0 +1,23 @@
+git config --global merge.lemontree.name "lemontree merge driver"
+git config --global merge.lemontree.driver "'C:/Program Files/LieberLieber/LemonTree/LemonTree.exe' --merge=auto --base=\"%O\" --mine=\"%A\" --theirs=\"%B\" --out=\"%A\""
+git config --global merge.lemontree.recursive binary
+
+
+// In the repo
+
+echo "*.eap merge=lemontree" >> .gitattributes
+echo "*.EAP merge=lemontree" >> .gitattributes
+git add .gitattributes
+git commit -am "added gitattributes"
+
+
+git config --global merge.tool lemontree
+git config --global mergetool.lemontree.cmd "'C:/Program Files/LieberLieber/LemonTree/LemonTree.exe' --merge=auto --base=\"$BASE\" --mine=\"$LOCAL\" --theirs=\"$REMOTE\" --out=\"$MERGED\""
+
+
+git config --global diff.tool lemontree
+git config --global difftool.lemontree.cmd "'C:/Program Files/LieberLieber/LemonTree/LemonTree.exe' --diff --base=\"$REMOTE\" --mine=\"$LOCAL\" --theirs=\"$REMOTE\""
+
+
+
+// git difftool
