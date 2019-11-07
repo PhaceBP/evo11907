@@ -1,0 +1,135 @@
+<MDG.Technology version="1.0"><Documentation id="TrimmWS" name="TigerTeam TrimmWS MDG" version="1.0" notes="TigerTeam Model Driven WebServices Profile for use with the TigerTeam Trimm Model Generator" infoURI="www.tigerteam.dk" supportURI="+45 7021 7170"/><UMLProfiles><UMLProfile profiletype="uml2">
+			<Documentation id="97291198-3" name="TrimmWS" version="1.0" notes="TrimmWS"/>
+			<Content>
+				<Stereotypes>
+					<Stereotype name="Fault" metatype="Fault" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Class">
+								<Property name="isActive" value=""/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="WSAttribute" metatype="WSAttribute" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Attribute"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="pattern" type="string" description="" unit="" values="" default=""/>
+							<Tag name="length" type="int" description="" unit="" values="" default=""/>
+							<Tag name="minLength" type="int" description="" unit="" values="" default=""/>
+							<Tag name="maxLength" type="int" description="" unit="" values="" default=""/>
+							<Tag name="minInclusive" type="double" description="" unit="" values="" default=""/>
+							<Tag name="minExclusive" type="double" description="" unit="" values="" default=""/>
+							<Tag name="maxInclusive" type="double" description="" unit="" values="" default=""/>
+							<Tag name="maxExclusive" type="double" description="" unit="" values="" default=""/>
+							<Tag name="fractionDigits" type="int" description="" unit="" values="" default=""/>
+							<Tag name="totalDigits" type="int" description="" unit="" values="" default=""/>
+							<Tag name="whiteSpace" type="enumeration" description="" unit="" values="preserve,replace,collapse" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="WSElement" metatype="WSElement" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Attribute"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="pattern" type="string" description="" unit="" values="" default=""/>
+							<Tag name="length" type="int" description="" unit="" values="" default=""/>
+							<Tag name="minLength" type="int" description="" unit="" values="" default=""/>
+							<Tag name="maxLength" type="int" description="" unit="" values="" default=""/>
+							<Tag name="minInclusive" type="double" description="" unit="" values="" default=""/>
+							<Tag name="minExclusive" type="double" description="" unit="" values="" default=""/>
+							<Tag name="maxInclusive" type="double" description="" unit="" values="" default=""/>
+							<Tag name="maxExclusive" type="double" description="" unit="" values="" default=""/>
+							<Tag name="fractionDigits" type="int" description="" unit="" values="" default=""/>
+							<Tag name="totalDigits" type="int" description="" unit="" values="" default=""/>
+							<Tag name="nillable" type="boolean" description="" unit="" values="true,false" default="true"/>
+							<Tag name="whiteSpace" type="enumeration" description="" unit="" values="preserve,replace,collapse" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="WSEnumeration" metatype="WSEnumeration" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Enumeration"/>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="WSEvent" metatype="WSEvent" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Operation">
+								<Property name="isOrdered" value=""/>
+								<Property name="isQuery" value="false"/>
+								<Property name="isUnique" value=""/>
+								<Property name="lower" value=""/>
+								<Property name="upper" value=""/>
+							</Apply>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="faultMessages" type="faultMessages" description="" unit="" values="" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="WSPackage" metatype="WSPackage" notes="" bgcolor="3329330" fontcolor="-1" bordercolor="-1" borderwidth="1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Package">
+								<Property name="URI" value=""/>
+							</Apply>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="namespace" type="namespace" description="" unit="" values="" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="WebService" metatype="WebService" notes="" bgcolor="16763904" fontcolor="-1" bordercolor="-1" borderwidth="1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Interface"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="namespace" type="namespace" description="" unit="" values="" default=""/>
+						</TaggedValues>
+					</Stereotype>
+				</Stereotypes>
+				<TaggedValueTypes/>
+			</Content>
+		</UMLProfile>
+	</UMLProfiles><TaggedValueTypes><RefData version="1.0" exporter="EA.25">
+			<DataSet name="Property Types" table="t_propertytypes" filter="Property='#Property#'"><DataRow><Column name="Property" value="faultMessages"/><Column name="Description" value="Trimm WS FaultMessage"/><Column name="Notes" value="Type=RefGUIDList;&#xA;Values=Class;&#xA;Stereotypes=Fault;&#xA;"/></DataRow><DataRow><Column name="Property" value="namespace"/><Column name="Description" value="Web Service namespace (Package and Interface)"/><Column name="Notes" value="Type=URL;"/></DataRow></DataSet></RefData></TaggedValueTypes><CodeModules><CodeModule language="TrimmWS" notes=""><CodeTypes><RefData version="1.0" exporter="EA.25">
+					<DataSet name="Model Data Types - Code and DDL" table="t_datatypes" filter="Type='#Type#' and ProductName='#ProductName#' and DataType='#DataType#'" stoplist=";DatatypeID;"><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="ENTITY"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="484"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="ENTITIES"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="485"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="gMonth"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="487"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="gMonthDay"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="488"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="gYear"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="489"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="gYearMonth"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="490"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="hexBinary"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="491"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="ID"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="492"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="IDREF"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="493"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="IDREFS"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="494"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="int"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="495"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="integer"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="496"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="language"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="497"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="long"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="498"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="Name"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="499"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="NCName"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="500"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="negativeInteger"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="501"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="NMTOKEN"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="502"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="NMOKENS"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="503"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="nonNegativeInteger"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="504"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="nonPositiveInteger"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="505"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="gDay"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="518"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="normalizedString"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="506"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="NOTATION"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="507"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="positiveInteger"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="508"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="QName"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="509"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="short"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="510"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="time"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="511"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="string"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="512"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="token"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="513"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="unsignedByte"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="514"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="unsignedInt"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="515"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="unsignedLong"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="516"/></DataRow><DataRow><Column name="Type" value="Code"/><Column name="ProductName" value="TrimmWS"/><Column name="DataType" value="unsignedShort"/><Column name="Size" value="0"/><Column name="MaxScale" value="0"/><Column name="User" value="1"/><Column name="DatatypeID" value="517"/></DataRow></DataSet></RefData></CodeTypes></CodeModule></CodeModules><DiagramProfile><UMLProfile profiletype="uml2">
+			<Documentation id="8E744E4E-D" name="TrimmWS" version="1.0" notes="TrimmWS"/>
+			<Content>
+				<Stereotypes>
+					<Stereotype name="TrimmWS" alias="Trimm WS" notes="Diagram for designing Web Services for use by the TigerTeam Trimm Model Generator." bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Diagram_Component">
+								<Property name="alias" value="Trimm WS"/>
+								<Property name="diagramID" value="TrimmWS"/>
+								<Property name="toolbox" value="TrimmWS"/>
+								<Property name="styleex" value="DefaultLang=TrimmWS;"/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+				</Stereotypes>
+				<TaggedValueTypes/>
+			</Content>
+		</UMLProfile>
+	</DiagramProfile><UIToolboxes><UMLProfile profiletype="uml2">
+			<Documentation id="D2020060-B" name="TrimmWS" version="1.0" alias="TrimmWS" notes="Alias=TrimmWS; Notes=Elements for modeling WSDL's for use by TigerTeam Trimm Model Generator;"/>
+			<Content>
+				<Stereotypes>
+					<Stereotype name="Trimm WS" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="ToolboxPage"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="TrimmWS::WSPackage(UML::Package)" type="" description="" unit="" values="" default="WS Package"/>
+							<Tag name="TrimmWS::WebService(UML::Interface)" type="" description="" unit="" values="" default="Web Service"/>
+							<Tag name="TrimmWS::WSAttribute(UML::Attribute)" type="" description="" unit="" values="" default="WS Attribute"/>
+							<Tag name="TrimmWS::WSElement(UML::Attribute)" type="" description="" unit="" values="" default="WS Element"/>
+							<Tag name="TrimmWS::WSEvent(UML::Operation)" type="" description="" unit="" values="" default="WS Event"/>
+							<Tag name="TrimmWS::Enumeration(UML::Enumeration)" type="" description="" unit="" values="" default="WS Enumeration"/>
+							<Tag name="TrimmWS::Fault(UML::Class)" type="" description="" unit="" values="" default="Fault"/>
+						</TaggedValues>
+					</Stereotype>
+				</Stereotypes>
+				<TaggedValueTypes/>
+			</Content>
+			<Options>
+				<Option name=" Notes" value="Elements for modeling WSDL's for use by TigerTeam Trimm Model Generator"/>
+			</Options>
+		</UMLProfile>
+	</UIToolboxes></MDG.Technology>

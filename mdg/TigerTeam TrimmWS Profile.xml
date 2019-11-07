@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="97291198-3" name="TrimmWS" version="1.0" notes="TrimmWS"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Fault" metatype="Fault" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="WSAttribute" metatype="WSAttribute" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Attribute"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="pattern" type="string" description="" unit="" values="" default=""/>
+					<Tag name="length" type="int" description="" unit="" values="" default=""/>
+					<Tag name="minLength" type="int" description="" unit="" values="" default=""/>
+					<Tag name="maxLength" type="int" description="" unit="" values="" default=""/>
+					<Tag name="minInclusive" type="double" description="" unit="" values="" default=""/>
+					<Tag name="minExclusive" type="double" description="" unit="" values="" default=""/>
+					<Tag name="maxInclusive" type="double" description="" unit="" values="" default=""/>
+					<Tag name="maxExclusive" type="double" description="" unit="" values="" default=""/>
+					<Tag name="fractionDigits" type="int" description="" unit="" values="" default=""/>
+					<Tag name="totalDigits" type="int" description="" unit="" values="" default=""/>
+					<Tag name="whiteSpace" type="enumeration" description="" unit="" values="preserve,replace,collapse" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="WSElement" metatype="WSElement" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Attribute"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="pattern" type="string" description="" unit="" values="" default=""/>
+					<Tag name="length" type="int" description="" unit="" values="" default=""/>
+					<Tag name="minLength" type="int" description="" unit="" values="" default=""/>
+					<Tag name="maxLength" type="int" description="" unit="" values="" default=""/>
+					<Tag name="minInclusive" type="double" description="" unit="" values="" default=""/>
+					<Tag name="minExclusive" type="double" description="" unit="" values="" default=""/>
+					<Tag name="maxInclusive" type="double" description="" unit="" values="" default=""/>
+					<Tag name="maxExclusive" type="double" description="" unit="" values="" default=""/>
+					<Tag name="fractionDigits" type="int" description="" unit="" values="" default=""/>
+					<Tag name="totalDigits" type="int" description="" unit="" values="" default=""/>
+					<Tag name="nillable" type="boolean" description="" unit="" values="true,false" default="true"/>
+					<Tag name="whiteSpace" type="enumeration" description="" unit="" values="preserve,replace,collapse" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="WSEnumeration" metatype="WSEnumeration" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Enumeration"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="WSEvent" metatype="WSEvent" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Operation">
+						<Property name="isOrdered" value=""/>
+						<Property name="isQuery" value="false"/>
+						<Property name="isUnique" value=""/>
+						<Property name="lower" value=""/>
+						<Property name="upper" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="faultMessages" type="faultMessages" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="WSPackage" metatype="WSPackage" notes="" bgcolor="3329330" fontcolor="-1" bordercolor="-1" borderwidth="1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Package">
+						<Property name="URI" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="namespace" type="namespace" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="WebService" metatype="WebService" notes="" bgcolor="16763904" fontcolor="-1" bordercolor="-1" borderwidth="1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Interface"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="namespace" type="namespace" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+	</Content>
+</UMLProfile>

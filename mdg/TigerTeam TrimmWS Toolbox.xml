@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="D2020060-B" name="TrimmWS" version="1.0" alias="TrimmWS" notes="Alias=TrimmWS; Notes=Elements for modeling WSDL's for use by TigerTeam Trimm Model Generator;"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Trimm WS" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="TrimmWS::WSPackage(UML::Package)" type="" description="" unit="" values="" default="WS Package"/>
+					<Tag name="TrimmWS::WebService(UML::Interface)" type="" description="" unit="" values="" default="Web Service"/>
+					<Tag name="TrimmWS::WSAttribute(UML::Attribute)" type="" description="" unit="" values="" default="WS Attribute"/>
+					<Tag name="TrimmWS::WSElement(UML::Attribute)" type="" description="" unit="" values="" default="WS Element"/>
+					<Tag name="TrimmWS::WSEvent(UML::Operation)" type="" description="" unit="" values="" default="WS Event"/>
+					<Tag name="TrimmWS::Enumeration(UML::Enumeration)" type="" description="" unit="" values="" default="WS Enumeration"/>
+					<Tag name="TrimmWS::Fault(UML::Class)" type="" description="" unit="" values="" default="Fault"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+	</Content>
+	<Options>
+		<Option name=" Notes" value="Elements for modeling WSDL's for use by TigerTeam Trimm Model Generator"/>
+	</Options>
+</UMLProfile>

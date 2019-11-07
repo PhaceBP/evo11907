@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="8E744E4E-D" name="TrimmWS" version="1.0" notes="TrimmWS"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="TrimmWS" alias="Trimm WS" notes="Diagram for designing Web Services for use by the TigerTeam Trimm Model Generator." bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Diagram_Component">
+						<Property name="alias" value="Trimm WS"/>
+						<Property name="diagramID" value="TrimmWS"/>
+						<Property name="toolbox" value="TrimmWS"/>
+						<Property name="styleex" value="DefaultLang=TrimmWS;"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+	</Content>
+</UMLProfile>
